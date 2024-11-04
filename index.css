@@ -1,214 +1,213 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    padding: 1rem;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: gray
+padding: 1rem;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #222;
-    padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  padding: 15px 30px;
 }
 
 header h1 {
-    color: red;
-    margin: 0;
+  color: red;
+  margin: 0;
 }
 
 header nav {
-    display: flex;
-    gap: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
 }
 
 header nav a {
-    color: rgb(223, 15, 15);
-    text-decoration: none;
+  color: rgb(223, 15, 15);
+  text-decoration: none;
 }
 
 header .user-panel {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .user-panel input {
-    padding: 0.3rem;
-    width: 7rem;
+  padding: 0.3rem;
+  width: 7rem;
 }
 
 .user-panel img {
-    border-radius: 100px;
-    width: 2.5rem;
-    cursor: pointer;
+  border-radius: 100px;
+  width: 2.5rem;
+  cursor: pointer;
 }
 
 .search-container {
-    position: relative;
+  position: relative;
 }
 
 .search-container input {
-    padding: 0.3rem 2rem;
-    width: 7rem;
+  padding: 0.3rem 2rem;
+  width: 7rem;
 }
 
 .search-icon {
-    position: absolute;
-    left: 10px;
-    top: 25%;;
-    color: gray;
-    cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 25%;
+  color: gray;
+  cursor: pointer;
 }
 
-
 .hero {
-    position: relative;
-    text-align: center;
-    color: white; 
-    margin: 2rem auto;
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 2rem auto;
 }
 
 .hero-image {
-    width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.5); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
 }
-.movie-infos{
-    margin-top: 15px;
+.movie-infos {
+  margin-top: 15px;
 }
 .movie-name {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .movie-infos {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .movie-texts {
-    margin: 15px 0;
+  margin: 15px 0;
 }
 
 .movie-details {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .movie-details span {
-    color: red;
-    font-weight: bold;
+  color: red;
+  font-weight: bold;
 }
 
 button {
-    background: red;
-    border: 0;
-    padding: 0.6rem 2.1rem;
-    border-radius: 0.5rem;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
+  background: red;
+  border: 0;
+  padding: 0.6rem 2.1rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 button i {
-    margin-left: -1rem;
-    margin-right: 0.5rem;
+  margin-left: -1rem;
+  margin-right: 0.5rem;
 }
 
 button:hover {
-    background-color: #ff6b81; 
+  background-color: #ff6b81;
 }
 
 .suggestion {
-    padding: 20px;
+  padding: 20px;
 }
 
 .suggestion-movies {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .movie-card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-    margin: 15px;
-    text-align: center;
-    width: 220px;
-    transition: transform 0.3s;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  margin: 15px;
+  text-align: center;
+  width: 220px;
+  transition: transform 0.3s;
 }
 
 .movie-card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .movie-card img {
-    border-radius: 8px 8px 0 0;
-    width: 100%;
+  border-radius: 8px 8px 0 0;
+  width: 100%;
 }
 
 .movie-card h3 {
-    margin: 10px 0;
-    font-size: 18px;
+  margin: 10px 0;
+  font-size: 18px;
 }
-
 
 footer {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 20px;
-    background: #222;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #222;
+  color: white;
 }
 .bottom-nav {
-    flex: 1; 
+  flex: 1;
 }
 
 .bottom-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
 .bottom-nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-.social-medias, .app-links {
-    display: flex;
-    align-items: center;
-    flex: 1; 
-    justify-content: flex-end; 
+.social-medias,
+.app-links {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
 }
 
-.social-medias a, .app-links a {
-    color: white;
-    margin: 0 5px;
-    font-size: 20px;
-    
+.social-medias a,
+.app-links a {
+  color: white;
+  margin: 0 5px;
+  font-size: 20px;
 }
 .Copyright-text {
-    text-align: center; 
-    flex: 1; 
+  text-align: center;
+  flex: 1;
 }

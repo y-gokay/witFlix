@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head> <!-- türkçe karakterler tanımlandı,iconlar çekileceği link ve css dosyasının yeri tanınmlandı,mobil kontrolcüsü eklendi,başlık oluşturuldu -->
-    <meta charset="UTF-8"> 
+  <head>
+    <!-- türkçe karakterler tanımlandı,iconlar çekileceği link ve css dosyasının yeri tanınmlandı,mobil kontrolcüsü eklendi,başlık oluşturuldu -->
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
@@ -12,136 +13,155 @@
     />
     <link href="./index.css" rel="stylesheet" />
     <title>WIT-FLIX</title>
-</head>
+  </head>
 
-<body><!--witflix yazısı eklendi,navbar eklendi, kullancı avatarı, arama motoru ve bildirimlerler eklendi -->
-    <header><h1>Wit-Flix</h1>
-        <nav>
-            <a href="">Topic-1</a>
-            <a href="">Topic-2</a>
-            <a href="">Topic-3</a>
-            <a href="">Topic-4</a>
-        </nav>
-        <div class="user-panel">
-            <div class="search-container">
-                <input type="text" placeholder="Search..">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-            </div>
-            <i class="fa-solid fa-bell"></i>
-            <img src="design_mats/img_avatar.png" alt="Avatar" class="avatar">
+  <body>
+    <!--witflix yazısı eklendi,navbar eklendi, kullancı avatarı, arama motoru ve bildirimlerler eklendi -->
+    <header>
+      <h1>Wit-Flix</h1>
+      <nav>
+        <a href="">Topic-1</a>
+        <a href="">Topic-2</a>
+        <a href="">Topic-3</a>
+        <a href="">Topic-4</a>
+      </nav>
+      <div class="user-panel">
+        <div class="search-container">
+          <input type="text" placeholder="Search.." />
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
         </div>
+        <i class="fa-solid fa-bell"></i>
+        <img src="design_mats/img_avatar.png" alt="Avatar" class="avatar" />
+      </div>
     </header>
 
-    <main class="hero"> <!-- Film hakkında isim, puan, süre, açıklama ve oynatma tuşu eklendi -->
-        <img src="design_mats/black._bb.png" alt="Movie" class="hero-image">
-        <div class="hero-content">
-            <div class="movie-name">
-                <h2>Movie Name</h2>
-            </div>
-            <div class="movie-points">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i> 8.5 IMDB
-            </div>
-            <div class="movie-infos">
-                <span class="content-rating">16+</span>
-                <span class="content-durations">2 hr 45 min</span>
-            </div>
-            <div class="movie-texts">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Optio, distinctio dolorum. Laborum, iusto cumque? 
-                    Minus quos ipsum rerum ducimus ipsam nihil sint dicta est molestias, 
-                    cum, repellendus deserunt assumenda repudiandae?</p>
-            </div>
-            <div class="movie-details">
-               <p><span>Starring: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
-               <p><span>Genre: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
-               <p><span>Tags: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
-            </div>
-            <button><i class="fa-solid fa-play"></i> Play Now</button>
+    <main class="hero">
+      <!-- Film hakkında isim, puan, süre, açıklama ve oynatma tuşu eklendi -->
+      <img src="design_mats/black._bb.png" alt="Movie" class="hero-image" />
+      <div class="hero-content">
+        <div class="movie-name">
+          <h2>Movie Name</h2>
         </div>
+        <div class="movie-points">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i> 8.5 IMDB
+        </div>
+        <div class="movie-infos">
+          <span class="content-rating">16+</span>
+          <span class="content-durations">2 hr 45 min</span>
+        </div>
+        <div class="movie-texts">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+            distinctio dolorum. Laborum, iusto cumque? Minus quos ipsum rerum
+            ducimus ipsam nihil sint dicta est molestias, cum, repellendus
+            deserunt assumenda repudiandae?
+          </p>
+        </div>
+        <div class="movie-details">
+          <p><span>Starring: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
+          <p><span>Genre: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
+          <p><span>Tags: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
+        </div>
+        <button><i class="fa-solid fa-play"></i> Play Now</button>
+      </div>
     </main>
 
-    <section class="suggestion"><!--tavsiye edilen ve popüler film kısmı eklendi -->
-        <h2>Suggested Movies</h2>
-        <div class="suggestion-movies">
-            <div class="movie-card">
-                <img src="design_mats/black._bb.png" alt="Movie 1">
-                <h3>Movie 1</h3>
-                <span class="content-durations">2 hr 45 min</span>
-                <button><i class="fa-solid fa-play"></i> Play Now</button>
-            </div>
-            <div class="movie-card">
-                <img src="design_mats/black._bb.png" alt="Movie 2">
-                <h3>Movie 2</h3>
-                <span class="content-durations">2 hr 45 min</span>
-                <button><i class="fa-solid fa-play"></i> Play Now</button>
-            </div>
-            <div class="movie-card">
-                <img src="design_mats/black._bb.png" alt="Movie 3">
-                <h3>Movie 3</h3>
-                <span class="content-durations">2 hr 45 min</span>
-                <button><i class="fa-solid fa-play"></i> Play Now</button>
-            </div>
-            <div class="movie-card">
-                <img src="design_mats/black._bb.png" alt="Movie 4">
-                <h3>Movie 4</h3>
-                <span class="content-durations">2 hr 45 min</span>
-                <button><i class="fa-solid fa-play"></i> Play Now</button>
-            </div>
+    <section class="suggestion">
+      <!--tavsiye edilen ve popüler film kısmı eklendi -->
+      <h2>Suggested Movies</h2>
+      <div class="suggestion-movies">
+        <div class="movie-card">
+          <img src="design_mats/black._bb.png" alt="Movie 1" />
+          <h3>Movie 1</h3>
+          <span class="content-durations">2 hr 45 min</span>
+          <button><i class="fa-solid fa-play"></i> Play Now</button>
         </div>
-        <h2>Popular Movies</h2>
-        <div class="suggestion-movies">
-            <div class="movie-card">
-                <img src="design_mats/black._bb.png" alt="Movie 1">
-                <h3>Movie 1</h3>
-                <span class="content-durations">2 hr 45 min</span>
-                <button><i class="fa-solid fa-play"></i> Play Now</button>
-            </div>
-            <div class="movie-card">
-                <img src="design_mats/black._bb.png" alt="Movie 2">
-                <h3>Movie 2</h3>
-                <span class="content-durations">2 hr 45 min</span>
-                <button><i class="fa-solid fa-play"></i> Play Now</button>
-            </div>
-            <div class="movie-card">
-                <img src="design_mats/black._bb.png" alt="Movie 3">
-                <h3>Movie 3</h3>
-                <span class="content-durations">2 hr 45 min</span>
-                <button><i class="fa-solid fa-play"></i> Play Now</button>
-            </div>
-            <div class="movie-card">
-                <img src="design_mats/black._bb.png" alt="Movie 4">
-                <h3>Movie 4</h3>
-                <span class="content-durations">2 hr 45 min</span>
-                <button><i class="fa-solid fa-play"></i> Play Now</button>
-            </div>
+        <div class="movie-card">
+          <img src="design_mats/black._bb.png" alt="Movie 2" />
+          <h3>Movie 2</h3>
+          <span class="content-durations">2 hr 45 min</span>
+          <button><i class="fa-solid fa-play"></i> Play Now</button>
         </div>
+        <div class="movie-card">
+          <img src="design_mats/black._bb.png" alt="Movie 3" />
+          <h3>Movie 3</h3>
+          <span class="content-durations">2 hr 45 min</span>
+          <button><i class="fa-solid fa-play"></i> Play Now</button>
+        </div>
+        <div class="movie-card">
+          <img src="design_mats/black._bb.png" alt="Movie 4" />
+          <h3>Movie 4</h3>
+          <span class="content-durations">2 hr 45 min</span>
+          <button><i class="fa-solid fa-play"></i> Play Now</button>
+        </div>
+      </div>
+      <h2>Popular Movies</h2>
+      <div class="suggestion-movies">
+        <div class="movie-card">
+          <img src="design_mats/black._bb.png" alt="Movie 1" />
+          <h3>Movie 1</h3>
+          <span class="content-durations">2 hr 45 min</span>
+          <button><i class="fa-solid fa-play"></i> Play Now</button>
+        </div>
+        <div class="movie-card">
+          <img src="design_mats/black._bb.png" alt="Movie 2" />
+          <h3>Movie 2</h3>
+          <span class="content-durations">2 hr 45 min</span>
+          <button><i class="fa-solid fa-play"></i> Play Now</button>
+        </div>
+        <div class="movie-card">
+          <img src="design_mats/black._bb.png" alt="Movie 3" />
+          <h3>Movie 3</h3>
+          <span class="content-durations">2 hr 45 min</span>
+          <button><i class="fa-solid fa-play"></i> Play Now</button>
+        </div>
+        <div class="movie-card">
+          <img src="design_mats/black._bb.png" alt="Movie 4" />
+          <h3>Movie 4</h3>
+          <span class="content-durations">2 hr 45 min</span>
+          <button><i class="fa-solid fa-play"></i> Play Now</button>
+        </div>
+      </div>
     </section>
-    
-    <footer><!--bootom nav eklendi,sosyal medya hesapları kısmı eklendi, app kısımları eklendi, copyright texti eklendi -->
-        <nav class="bottom-nav">
-            <a href="">Bottom-1</a>
-            <a href="">Bottom-2</a>
-            <a href="">Bottom-3</a>
-        </nav>
-        <div class="social-medias">
-            <h5>Follow Us</h5>
-            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-        </div>
-        <div class="app-links">
-            <h5>Apps</h5>
-            <a href="https://www.apple.com/tr/app-store/" target="_blank"><i class="fab fa-app-store"></i></a>
-            <a href="https://play.google.com/store/apps?gl=TR" target="_blank"><i class="fa-brands fa-google-play"></i></a>
-        </div>
-        <div class="Copyright-text">
-            <p>© Copyright 2024</p>
-        </div>
+
+    <footer>
+      <!--bootom nav eklendi,sosyal medya hesapları kısmı eklendi, app kısımları eklendi, copyright texti eklendi -->
+      <nav class="bottom-nav">
+        <a href="">Bottom-1</a>
+        <a href="">Bottom-2</a>
+        <a href="">Bottom-3</a>
+      </nav>
+      <div class="social-medias">
+        <h5>Follow Us</h5>
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+        <a href="https://twitter.com" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a href="https://youtube.com" target="_blank"
+          ><i class="fab fa-youtube"></i
+        ></a>
+      </div>
+      <div class="app-links">
+        <h5>Apps</h5>
+        <a href="https://www.apple.com/tr/app-store/" target="_blank"
+          ><i class="fab fa-app-store"></i
+        ></a>
+        <a href="https://play.google.com/store/apps?gl=TR" target="_blank"
+          ><i class="fa-brands fa-google-play"></i
+        ></a>
+      </div>
+      <div class="Copyright-text">
+        <p>© Copyright 2024</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
