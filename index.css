@@ -5,10 +5,10 @@
 }
 
 body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 255, 255);
   padding: 1rem;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: gray;
 }
 
 header {
@@ -17,16 +17,19 @@ header {
   align-items: center;
   background-color: #222;
   padding: 15px 30px;
+  flex-wrap: wrap;
 }
 
 header h1 {
   color: red;
   margin: 0;
+  font-size: 24px;
 }
 
 header nav {
   display: flex;
   gap: 1.5rem;
+  margin-bottom: 10px;
 }
 
 header nav a {
@@ -70,6 +73,7 @@ header .user-panel {
 
 .hero {
   position: relative;
+  overflow: hidden;
   text-align: center;
   color: white;
   margin: 2rem auto;
@@ -77,8 +81,8 @@ header .user-panel {
 
 .hero-image {
   width: 100%;
+  height: auto;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .hero-content {
@@ -90,18 +94,72 @@ header .user-panel {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  max-width: 600px;
+  margin-left: 20px;
 }
-.movie-infos {
-  margin-top: 15px;
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.movie-name {
-  margin-bottom: 15px;
+
+.slides {
+  display: flex;
+  width: 200%;
+  transition: transform 0.5s ease-in-out;
+}
+
+input[name="slider"] {
+  display: none;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 10px;
+}
+
+.manual-btn {
+  border: 2px solid rgb(255, 255, 255);
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+input[type="radio"]:checked ~ .navigation-manual .manual-btn {
+  background: red;
 }
 
 .movie-infos {
+  margin-top: 15px;
+}
+
+.movie-name {
   margin-bottom: 15px;
 }
 
@@ -141,7 +199,8 @@ button:hover {
   padding: 20px;
 }
 
-.suggestion-movies {
+.suggestion-movies,
+.popular-movies {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -179,6 +238,7 @@ footer {
   background: #222;
   color: white;
 }
+
 .bottom-nav {
   flex: 1;
 }
@@ -207,7 +267,46 @@ footer {
   margin: 0 5px;
   font-size: 20px;
 }
+
 .Copyright-text {
   text-align: center;
   flex: 1;
+}
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 0.3rem;
+}
+.hamburger-menu i {
+  font-size: 2rem;
+  color: white;
+}
+@media (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+
+  header .hamburger-menu {
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+  .search-container input {
+    width: 100%;
+  }
+
+  .movie-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  button {
+    padding: 0.6rem 1.8rem;
+    font-size: 1rem;
+  }
+
+  .hero-content {
+    max-width: 90%;
+  }
 }

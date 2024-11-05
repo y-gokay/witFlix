@@ -19,12 +19,15 @@
     <!--witflix yazısı eklendi,navbar eklendi, kullancı avatarı, arama motoru ve bildirimlerler eklendi -->
     <header>
       <h1>Wit-Flix</h1>
-      <nav>
+      <nav class="nav-items">
         <a href="">Topic-1</a>
         <a href="">Topic-2</a>
         <a href="">Topic-3</a>
         <a href="">Topic-4</a>
       </nav>
+      <div class="hamburger-menu" id="hamburger-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <div class="user-panel">
         <div class="search-container">
           <input type="text" placeholder="Search.." />
@@ -35,43 +38,100 @@
       </div>
     </header>
 
+    <!-- Film hakkında isim, puan, süre, açıklama ve oynatma tuşu eklendi,slider tarzı yapıldı -->
     <main class="hero">
-      <!-- Film hakkında isim, puan, süre, açıklama ve oynatma tuşu eklendi -->
-      <img src="design_mats/black._bb.png" alt="Movie" class="hero-image" />
-      <div class="hero-content">
-        <div class="movie-name">
-          <h2>Movie Name</h2>
+      <div class="slider">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <div class="slides">
+          <div class="slide">
+            <img
+              src="design_mats/black._bb.png"
+              alt="Movie 1"
+              class="hero-image"
+            />
+            <div class="hero-content">
+              <div class="movie-name">
+                <h2>Movie Name 1</h2>
+              </div>
+              <div class="movie-points">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i> 8.5 IMDB
+              </div>
+              <div class="movie-infos">
+                <span class="content-rating">16+</span>
+                <span class="content-durations">2 hr 45 min</span>
+              </div>
+              <div class="movie-texts">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, distinctio dolorum. Laborum, iusto cumque? Minus quos
+                  ipsum rerum ducimus ipsam nihil sint dicta est molestias, cum,
+                  repellendus deserunt assumenda repudiandae?
+                </p>
+              </div>
+              <div class="movie-details">
+                <p>
+                  <span>Starring: </span>lorem ipsum, lorem ipsum, lorem ipsum
+                </p>
+                <p><span>Genre: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
+                <p><span>Tags: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="slide">
+            <img
+              src="design_mats/black._bb.png"
+              alt="Movie 2"
+              class="hero-image"
+            />
+            <div class="hero-content">
+              <div class="movie-name">
+                <h2>Movie Name 2</h2>
+              </div>
+              <div class="movie-points">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i> 8.5 IMDB
+              </div>
+              <div class="movie-infos">
+                <span class="content-rating">16+</span>
+                <span class="content-durations">2 hr 45 min</span>
+              </div>
+              <div class="movie-texts">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Optio, distinctio dolorum. Laborum, iusto cumque? Minus quos
+                  ipsum rerum ducimus ipsam nihil sint dicta est molestias, cum,
+                  repellendus deserunt assumenda repudiandae?
+                </p>
+              </div>
+              <div class="movie-details">
+                <p>
+                  <span>Starring: </span>lorem ipsum, lorem ipsum, lorem ipsum
+                </p>
+                <p><span>Genre: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
+                <p><span>Tags: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
         </div>
-        <div class="movie-points">
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star-half-stroke"></i> 8.5 IMDB
+        <div class="navigation-manual">
+          <label for="slide1" class="manual-btn"></label>
+          <label for="slide2" class="manual-btn"></label>
         </div>
-        <div class="movie-infos">
-          <span class="content-rating">16+</span>
-          <span class="content-durations">2 hr 45 min</span>
-        </div>
-        <div class="movie-texts">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
-            distinctio dolorum. Laborum, iusto cumque? Minus quos ipsum rerum
-            ducimus ipsam nihil sint dicta est molestias, cum, repellendus
-            deserunt assumenda repudiandae?
-          </p>
-        </div>
-        <div class="movie-details">
-          <p><span>Starring: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
-          <p><span>Genre: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
-          <p><span>Tags: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
-        </div>
-        <button><i class="fa-solid fa-play"></i> Play Now</button>
       </div>
     </main>
 
+    <!--tavsiye edilen ve popüler film kısmı eklendi -->
     <section class="suggestion">
-      <!--tavsiye edilen ve popüler film kısmı eklendi -->
       <h2>Suggested Movies</h2>
       <div class="suggestion-movies">
         <div class="movie-card">
@@ -100,7 +160,7 @@
         </div>
       </div>
       <h2>Popular Movies</h2>
-      <div class="suggestion-movies">
+      <div class="popular-movies">
         <div class="movie-card">
           <img src="design_mats/black._bb.png" alt="Movie 1" />
           <h3>Movie 1</h3>
@@ -128,12 +188,13 @@
       </div>
     </section>
 
+    <!--bootom nav eklendi,sosyal medya hesapları kısmı eklendi, app kısımları eklendi, copyright texti eklendi -->
     <footer>
-      <!--bootom nav eklendi,sosyal medya hesapları kısmı eklendi, app kısımları eklendi, copyright texti eklendi -->
       <nav class="bottom-nav">
-        <a href="">Bottom-1</a>
-        <a href="">Bottom-2</a>
-        <a href="">Bottom-3</a>
+        <a href="">Terms of Use</a>
+        <a href="">Privacy Policy</a>
+        <a href="">FAQ</a>
+        <a href="">Watch List</a>
       </nav>
       <div class="social-medias">
         <h5>Follow Us</h5>
