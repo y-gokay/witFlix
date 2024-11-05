@@ -282,20 +282,16 @@ footer {
   font-size: 2rem;
   color: white;
 }
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   header nav {
     display: none;
   }
-
   header .hamburger-menu {
     display: flex;
   }
-}
-@media (max-width: 480px) {
   .search-container input {
     width: 100%;
   }
-
   .movie-card {
     width: 100%;
     margin: 10px 0;
