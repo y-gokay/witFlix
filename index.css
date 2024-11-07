@@ -68,6 +68,7 @@ header .user-panel {
   color: #aaa;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .search-container input {
