@@ -1,41 +1,40 @@
-* {
-  /* genel düzeltme */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Genel Ayarlar */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(255, 255, 255);
   padding: 1rem;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/*header ile alakalı*/
+a:hover {
+  color: red;
+}
+
+h2,
+h4 {
+  text-transform: uppercase;
+}
+
+/* Header Ayarlar*/
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #222;
   padding: 15px 30px;
-  flex-wrap: wrap;
 }
 
 header h1 {
   color: red;
   margin: 0;
-  font-size: 24px;
+  flex: 1;
 }
 
 header nav {
   display: flex;
-  gap: 1.5rem;
-  margin-bottom: 10px;
+  gap: 0.5rem;
 }
 
 header nav a {
-  color: rgb(223, 15, 15);
+  color: rgb(111, 111, 111);
   text-decoration: none;
 }
 
@@ -43,140 +42,78 @@ header .user-panel {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-}
-
-.user-panel input {
-  padding: 0.3rem;
-  width: 7rem;
+  flex: 1;
+  justify-content: flex-end;
 }
 
 .user-panel img {
   border-radius: 100px;
   width: 2.5rem;
-  cursor: pointer;
+}
+
+.nav-menu {
+  display: none;
 }
 
 .search-container {
   position: relative;
 }
 
-.search-container input {
-  padding: 0.3rem 2rem;
-  width: 7rem;
-}
-
-.search-icon {
+.search-container .search-icon {
   position: absolute;
-  left: 10px;
-  top: 25%;
-  color: gray;
-  cursor: pointer;
-}
-
-/*hero ile alakalı*/
-.hero {
-  position: relative;
-  overflow: hidden;
-  text-align: center;
-  color: white;
-  margin: 2rem auto;
-}
-
-.hero-image {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.hero-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  color: #aaa;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px;
-  text-align: left;
-  max-width: 600px;
-  margin-left: 20px;
-}
-
-.slider {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  position: relative;
 }
 
-.slides {
+.search-container input {
+  width: calc(100% - 2rem);
+  padding: 0.3rem 1.5rem 0.3rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.search-container input:focus {
+  outline: none;
+  border-color: red;
+}
+
+/* Hero */
+main {
+  aspect-ratio: 5/3;
+  border: 1px solid black;
+  margin: 2rem auto;
+  padding: 1rem;
   display: flex;
-  width: 200%;
-  transition: transform 0.5s ease-in-out;
+  align-items: center;
 }
 
-input[name="slider"] {
-  display: none;
+.user-rating i {
+  color: red;
 }
 
-.slide {
-  min-width: 100%;
-  box-sizing: border-box;
-  position: relative;
+.content-rating {
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  margin: 0 0.5rem;
 }
 
-.navigation-manual {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  bottom: 10px;
-}
-
-.manual-btn {
-  border: 2px solid rgb(255, 255, 255);
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.manual-btn:not(:last-child) {
-  margin-right: 10px;
-}
-
-#slide1:checked ~ .slides {
-  transform: translateX(0%);
-}
-
-#slide2:checked ~ .slides {
-  transform: translateX(-100%);
-}
-
-input[type="radio"]:checked ~ .navigation-manual .manual-btn {
-  background: red;
-}
-
-.movie-infos {
-  margin-top: 15px;
-}
-
-.movie-name {
-  margin-bottom: 15px;
-}
-
-.movie-texts {
-  margin: 15px 0;
-}
-
-.movie-details {
-  margin: 10px 0;
+.main-movie {
+  width: 60%;
 }
 
 .movie-details span {
   color: red;
   font-weight: bold;
+}
+
+.movie-details p {
+  margin: 0.5rem 0;
 }
 
 button {
@@ -193,120 +130,171 @@ button i {
   margin-left: -1rem;
   margin-right: 0.5rem;
 }
-
 button:hover {
   background-color: #ff6b81;
 }
 
-.suggestion {
-  padding: 20px;
+/* Suggestion */
+.suggestion-row {
+  margin-bottom: 2rem;
 }
 
-.suggestion-movies,
-.popular-movies {
+.suggestion-row-title {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.suggestion-row-title a {
+  text-decoration: none;
+  color: gray;
+}
+
+.suggestion-row-title a:hover {
+  color: red;
+}
+
+.suggestion-row-title h3 {
+  margin: 0.5rem 0;
+}
+
+.suggestion-movies {
+  display: flex;
+  gap: 1.5rem;
 }
 
 .movie-card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  margin: 15px;
-  text-align: center;
-  width: 220px;
+  border: 1px solid black;
+  min-width: 250px;
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
   transition: transform 0.3s;
 }
-
 .movie-card:hover {
   transform: scale(1.05);
 }
 
 .movie-card img {
   border-radius: 8px 8px 0 0;
-  width: 100%;
+  width: 50%;
+}
+.movie-card h4 {
+  margin: 0;
 }
 
-.movie-card h3 {
-  margin: 10px 0;
-  font-size: 18px;
+.movie-card .content-rating {
+  margin-left: 0;
 }
-/*footer ile alakalı*/
+
+.movie-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.movie-card button {
+  padding: 0.5rem 1.8rem;
+  border-radius: 0.4rem;
+  font-size: 1rem;
+}
+
+.movie-card button i {
+  margin-left: -0.8rem;
+  margin-right: 0.3rem;
+}
+.suggestion-movies {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+}
+.suggestion-movies::-webkit-scrollbar {
+  height: 8px;
+}
+
+.suggestion-movies::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+.suggestion-movies::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Footer */
 footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  gap: 1rem;
   padding: 20px;
-  background: #222;
-  color: white;
 }
 
-.bottom-nav {
-  flex: 1;
+footer h5 {
+  margin-top: 0;
 }
 
-.bottom-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.bottom-nav a:hover {
-  text-decoration: underline;
-}
-
-.social-medias,
-.app-links {
+.footer-navigation nav {
   display: flex;
-  align-items: center;
-  flex: 1;
-  justify-content: flex-end;
+  gap: 1rem;
 }
 
-.social-medias a,
-.app-links a {
-  color: white;
-  margin: 0 5px;
-  font-size: 20px;
+.social-navigation {
+  min-width: 120px;
 }
 
-.Copyright-text {
-  text-align: center;
-  flex: 1;
+.mobile-app-navigation {
+  min-width: 230px;
 }
-.hamburger-menu {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 0.3rem;
+
+.mobile-app-navigation img {
+  height: 2rem;
 }
-.hamburger-menu i {
-  font-size: 2rem;
-  color: white;
-}
-/*hero ile alakalı*/
-@media (max-width: 480px) {
+
+/* Mobil Uyumlu Düzenlemeler */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+  }
+
   header nav {
+    order: 1;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1rem;
     display: none;
   }
-  header .hamburger-menu {
+
+  header .nav-menu {
     display: flex;
+    cursor: pointer;
   }
+
+  header .user-panel {
+    display: none;
+  }
+
+  .main-movie {
+    width: 100%;
+  }
+
+  footer {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  footer nav {
+    justify-content: center;
+  }
+
+  .social-navigation,
+  .mobile-app-navigation {
+    width: 100%;
+  }
+
   .search-container input {
-    width: 100%;
-  }
-  .movie-card {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  button {
-    padding: 0.6rem 1.8rem;
-    font-size: 1rem;
-  }
-
-  .hero-content {
-    max-width: 90%;
+    width: calc(100% - 2rem);
+    padding: 0.3rem 1.5rem 0.3rem 1rem;
   }
 }

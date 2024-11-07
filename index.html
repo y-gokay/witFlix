@@ -12,216 +12,210 @@
       referrerpolicy="no-referrer"
     />
     <link href="./index.css" rel="stylesheet" />
-    <title>WIT-FLIX</title>
+    <title>WiTFLiX | Browse</title>
   </head>
-
   <body>
     <!--witflix yazısı eklendi,navbar eklendi, kullancı avatarı, arama motoru ve bildirimlerler eklendi -->
     <header>
-      <h1>Wit-Flix</h1>
-      <nav class="nav-items">
-        <a href="">Topic-1</a>
-        <a href="">Topic-2</a>
-        <a href="">Topic-3</a>
-        <a href="">Topic-4</a>
+      <h1>WiTFLiX</h1>
+      <nav>
+        <a href="">Topic 1</a>
+        <a href="">Topic 2</a>
+        <a href="">Topic 3</a>
+        <a href="">Topic 4</a>
       </nav>
-      <div class="hamburger-menu" id="hamburger-menu">
-        <i class="fa-solid fa-bars"></i>
-      </div>
       <div class="user-panel">
         <div class="search-container">
-          <input type="text" placeholder="Search.." />
+          <input type="text" placeholder="Search..." />
           <i class="fa-solid fa-magnifying-glass search-icon"></i>
         </div>
-        <i class="fa-solid fa-bell"></i>
-        <img src="design_mats/img_avatar.png" alt="Avatar" class="avatar" />
+        <i class="fa-solid fa-bell notifications fa-2x"></i>
+        <img class="avatar" src="design_mats/img_avatar.png" />
       </div>
+      <i class="fa-solid fa-bars fa-2xl nav-menu"></i>
     </header>
 
     <!-- Film hakkında isim, puan, süre, açıklama ve oynatma tuşu eklendi,slider tarzı yapıldı -->
     <main class="hero">
-      <div class="slider">
-        <input type="radio" name="slider" id="slide1" checked />
-        <input type="radio" name="slider" id="slide2" />
-        <div class="slides">
-          <div class="slide">
-            <img
-              src="design_mats/black._bb.png"
-              alt="Movie 1"
-              class="hero-image"
-            />
-            <div class="hero-content">
-              <div class="movie-name">
-                <h2>Movie Name 1</h2>
-              </div>
-              <div class="movie-points">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i> 8.5 IMDB
-              </div>
-              <div class="movie-infos">
-                <span class="content-rating">16+</span>
-                <span class="content-durations">2 hr 45 min</span>
-              </div>
-              <div class="movie-texts">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Optio, distinctio dolorum. Laborum, iusto cumque? Minus quos
-                  ipsum rerum ducimus ipsam nihil sint dicta est molestias, cum,
-                  repellendus deserunt assumenda repudiandae?
-                </p>
-              </div>
-              <div class="movie-details">
-                <p>
-                  <span>Starring: </span>lorem ipsum, lorem ipsum, lorem ipsum
-                </p>
-                <p><span>Genre: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
-                <p><span>Tags: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
-              </div>
-              <button><i class="fa-solid fa-play"></i> Play Now</button>
-            </div>
-          </div>
-          <div class="slide">
-            <img
-              src="design_mats/black._bb.png"
-              alt="Movie 2"
-              class="hero-image"
-            />
-            <div class="hero-content">
-              <div class="movie-name">
-                <h2>Movie Name 2</h2>
-              </div>
-              <div class="movie-points">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i> 8.5 IMDB
-              </div>
-              <div class="movie-infos">
-                <span class="content-rating">16+</span>
-                <span class="content-durations">2 hr 45 min</span>
-              </div>
-              <div class="movie-texts">
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Optio, distinctio dolorum. Laborum, iusto cumque? Minus quos
-                  ipsum rerum ducimus ipsam nihil sint dicta est molestias, cum,
-                  repellendus deserunt assumenda repudiandae?
-                </p>
-              </div>
-              <div class="movie-details">
-                <p>
-                  <span>Starring: </span>lorem ipsum, lorem ipsum, lorem ipsum
-                </p>
-                <p><span>Genre: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
-                <p><span>Tags: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
-              </div>
-              <button><i class="fa-solid fa-play"></i> Play Now</button>
-            </div>
-          </div>
+      <div class="main-movie">
+        <h2>Movie Name</h2>
+        <div class="movie-info">
+          <span class="user-rating"
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star-half-stroke"></i> 8.5 IMDB</span
+          ><span class="content-rating">16+</span
+          ><span class="movie-duration">2 h 21 min</span>
         </div>
-        <div class="navigation-manual">
-          <label for="slide1" class="manual-btn"></label>
-          <label for="slide2" class="manual-btn"></label>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi et
+          eligendi reprehenderit, aliquam iste porro ex atque nesciunt sapiente
+          explicabo. Totam dolores deleniti ad accusantium? Earum accusantium
+          laborum aliquid ullam.
+        </p>
+        <div class="movie-details">
+          <p><span>Starring: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
+          <p><span>Genre: </span>lorem, ipsum</p>
+          <p><span>Tags: </span>lor, em, ip, sum</p>
         </div>
+        <button><i class="fa-solid fa-play"></i> Play Now</button>
       </div>
     </main>
 
-    <!--tavsiye edilen ve popüler film kısmı eklendi -->
     <section class="suggestion">
-      <h2>Suggested Movies</h2>
-      <div class="suggestion-movies">
-        <div class="movie-card">
-          <img src="design_mats/black._bb.png" alt="Movie 1" />
-          <h3>Movie 1</h3>
-          <span class="content-durations">2 hr 45 min</span>
-          <button><i class="fa-solid fa-play"></i> Play Now</button>
+      <div class="suggestion-row">
+        <div class="suggestion-row-title">
+          <h3>Popular Movies</h3>
+          <a href="#">View All</a>
         </div>
-        <div class="movie-card">
-          <img src="design_mats/black._bb.png" alt="Movie 2" />
-          <h3>Movie 2</h3>
-          <span class="content-durations">2 hr 45 min</span>
-          <button><i class="fa-solid fa-play"></i> Play Now</button>
-        </div>
-        <div class="movie-card">
-          <img src="design_mats/black._bb.png" alt="Movie 3" />
-          <h3>Movie 3</h3>
-          <span class="content-durations">2 hr 45 min</span>
-          <button><i class="fa-solid fa-play"></i> Play Now</button>
-        </div>
-        <div class="movie-card">
-          <img src="design_mats/black._bb.png" alt="Movie 4" />
-          <h3>Movie 4</h3>
-          <span class="content-durations">2 hr 45 min</span>
-          <button><i class="fa-solid fa-play"></i> Play Now</button>
+        <div class="suggestion-movies">
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span>
+                <span class="movie-duration">2 h 45 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span>
+                <span class="movie-duration">2 h 45 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span>
+                <span class="movie-duration">2 h 45 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span>
+                <span class="movie-duration">2 h 45 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span>
+                <span class="movie-duration">2 h 45 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
         </div>
       </div>
-      <h2>Popular Movies</h2>
-      <div class="popular-movies">
-        <div class="movie-card">
-          <img src="design_mats/black._bb.png" alt="Movie 1" />
-          <h3>Movie 1</h3>
-          <span class="content-durations">2 hr 45 min</span>
-          <button><i class="fa-solid fa-play"></i> Play Now</button>
+      <!--tavsiye edilen ve popüler film kısmı eklendi -->
+      <div class="suggestion-row">
+        <div class="suggestion-row-title">
+          <h3>Recommended for You</h3>
+          <a href="#">View All</a>
         </div>
-        <div class="movie-card">
-          <img src="design_mats/black._bb.png" alt="Movie 2" />
-          <h3>Movie 2</h3>
-          <span class="content-durations">2 hr 45 min</span>
-          <button><i class="fa-solid fa-play"></i> Play Now</button>
-        </div>
-        <div class="movie-card">
-          <img src="design_mats/black._bb.png" alt="Movie 3" />
-          <h3>Movie 3</h3>
-          <span class="content-durations">2 hr 45 min</span>
-          <button><i class="fa-solid fa-play"></i> Play Now</button>
-        </div>
-        <div class="movie-card">
-          <img src="design_mats/black._bb.png" alt="Movie 4" />
-          <h3>Movie 4</h3>
-          <span class="content-durations">2 hr 45 min</span>
-          <button><i class="fa-solid fa-play"></i> Play Now</button>
+        <div class="suggestion-movies">
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span>
+                <span class="movie-duration">2 h 45 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span>
+                <span class="movie-duration">2 h 45 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span>
+                <span class="movie-duration">2 h 45 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span>
+                <span class="movie-duration">2 h 45 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span>
+                <span class="movie-duration">2 h 45 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
     <!--bootom nav eklendi,sosyal medya hesapları kısmı eklendi, app kısımları eklendi, copyright texti eklendi -->
     <footer>
-      <nav class="bottom-nav">
-        <a href="">Terms of Use</a>
-        <a href="">Privacy Policy</a>
-        <a href="">FAQ</a>
-        <a href="">Watch List</a>
-      </nav>
-      <div class="social-medias">
+      <div class="footer-navigation">
+        <nav>
+          <a href="">Terms of Use</a>
+          <a href="">Privacy Policy</a>
+          <a href="">FAQ</a>
+          <a href="">Watch List</a>
+        </nav>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab totam
+          repellat mollitia placeat saepe ipsa provident ut, molestiae eaque
+          eligendi culpa similique non earum assumenda? Iste quisquam
+          necessitatibus maxime sequi optio, cupiditate non voluptatibus dolor
+          hic quidem, architecto, recusandae veritatis?
+        </p>
+      </div>
+      <div class="social-navigation">
         <h5>Follow Us</h5>
-        <a href="https://facebook.com" target="_blank"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a href="https://twitter.com" target="_blank"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a href="https://instagram.com" target="_blank"
-          ><i class="fab fa-instagram"></i
-        ></a>
-        <a href="https://youtube.com" target="_blank"
-          ><i class="fab fa-youtube"></i
-        ></a>
+        <div>
+          <i class="fa-brands fa-square-facebook fa-2x"></i>
+          <i class="fa-brands fa-square-x-twitter fa-2x"></i>
+          <i class="fa-brands fa-youtube fa-2x"></i>
+        </div>
       </div>
-      <div class="app-links">
+      <div class="mobile-app-navigation">
         <h5>Apps</h5>
-        <a href="https://www.apple.com/tr/app-store/" target="_blank"
-          ><i class="fab fa-app-store"></i
-        ></a>
-        <a href="https://play.google.com/store/apps?gl=TR" target="_blank"
-          ><i class="fa-brands fa-google-play"></i
-        ></a>
-      </div>
-      <div class="Copyright-text">
-        <p>© Copyright 2024</p>
+        <div>
+          <a href="https://www.apple.com/tr/app-store/" target="_blank"
+            ><i class="fab fa-app-store fa-2x"></i
+          ></a>
+          <a href="https://play.google.com/store/apps?gl=TR" target="_blank"
+            ><i class="fab fa-google-play fa-2x"></i
+          ></a>
+        </div>
       </div>
     </footer>
   </body>
