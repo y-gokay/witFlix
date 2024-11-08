@@ -18,21 +18,22 @@
     <!--witflix yazısı eklendi,navbar eklendi, kullancı avatarı, arama motoru ve bildirimlerler eklendi -->
     <header>
       <h1>WiTFLiX</h1>
-      <nav>
-        <a href="">Topic 1</a>
-        <a href="">Topic 2</a>
-        <a href="">Topic 3</a>
-        <a href="">Topic 4</a>
+      <nav id="navbar">
+        <a href="">Diziler</a>
+        <a href="">Filmler</a>
+        <a href="">Animeler</a>
+        <a href="">Diğer</a>
       </nav>
+      <div class="search-container">
+        <input type="text" placeholder="Search..." />
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      </div>
       <div class="user-panel">
-        <div class="search-container">
-          <input type="text" placeholder="Search..." />
-          <i class="fa-solid fa-magnifying-glass search-icon"></i>
-        </div>
         <i class="fa-solid fa-bell notifications fa-2x"></i>
         <img class="avatar" src="design_mats/img_avatar.png" />
       </div>
-      <i class="fa-solid fa-bars fa-2xl nav-menu"></i>
+
+      <i id="hamburger-menu" class="fa-solid fa-bars fa-2xl nav-menu"></i>
     </header>
 
     <!-- Film hakkında isim, puan, süre, açıklama ve oynatma tuşu eklendi,slider tarzı yapıldı -->
@@ -225,4 +226,22 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    //hambuerger menüyü çalıştıran js kodu
+    //hamburger menü ve navbar tanımlandı
+    const hamburgerMenu = document.getElementById("hamburger-menu");
+    const navbar = document.getElementById("navbar");
+
+    //tıklanınca çalışma fonksiyonı
+    hamburgerMenu.addEventListener("click", function () {
+      navbar.classList.toggle("active");
+    });
+    //navbar açık bir şekilde ekran boyutu değişince sıfırlayan kod
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 768) {
+        navbar.classList.remove("active");
+      }
+    });
+  </script>
 </html>

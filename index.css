@@ -1,21 +1,25 @@
 /* Genel Ayarlar */
 body {
+  /*genel stil ayarları*/
   padding: 1rem;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 a:hover {
+  /*linklerin üzerine gelince kırmızı yapma*/
   color: red;
 }
 
 h2,
 h4 {
+  /*h2 ve h4 metinlerini büyütme*/
   text-transform: uppercase;
 }
 
 /* Header Ayarlar*/
 header {
+  /*headerda ki başlık nav ve panel için stil ayarları*/
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,22 +27,28 @@ header {
 }
 
 header h1 {
+  /*anabaşlık stil ayarı*/
   color: red;
   margin: 0;
   flex: 1;
 }
 
 header nav {
+  /*nav stil ayarı*/
   display: flex;
   gap: 0.5rem;
+  justify-content: center;
+  width: 50%;
 }
 
 header nav a {
+  /*nav linklerin still ayarları*/
   color: rgb(111, 111, 111);
   text-decoration: none;
 }
 
 header .user-panel {
+  /*avatar arama ve notification kısmı stil ayarları*/
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -47,19 +57,30 @@ header .user-panel {
 }
 
 .user-panel img {
+  /*avatar stil ayarı*/
   border-radius: 100px;
   width: 2.5rem;
 }
 
+#navbar.active {
+  /*navbarı aktifleştirince uygulanan stil ayarı*/
+  display: flex;
+  flex-direction: column;
+}
+
 .nav-menu {
+  /*hamburger menüyü gizler*/
   display: none;
 }
 
 .search-container {
+  /*arama kutusunun ayarları*/
   position: relative;
+  width: 7.5rem;
 }
 
 .search-container .search-icon {
+  /*büyüteçin stil ve konum ayarları*/
   position: absolute;
   right: 10px;
   top: 50%;
@@ -72,6 +93,7 @@ header .user-panel {
 }
 
 .search-container input {
+  /*arama kutusunun ayarları*/
   width: calc(100% - 2rem);
   padding: 0.3rem 1.5rem 0.3rem 1rem;
   border-radius: 0.5rem;
@@ -79,12 +101,14 @@ header .user-panel {
 }
 
 .search-container input:focus {
+  /*arama kutusuna tıklanınca çalışacka stil ayarı*/
   outline: none;
   border-color: red;
 }
 
 /* Hero */
 main {
+  /*main movienin stil ayarlar*/
   aspect-ratio: 5/3;
   border: 1px solid black;
   margin: 2rem auto;
@@ -94,10 +118,12 @@ main {
 }
 
 .user-rating i {
+  /*yıldızların stil ayarları*/
   color: red;
 }
 
 .content-rating {
+  /*yaşın stil ayarları*/
   border: 1px solid black;
   border-radius: 0.3rem;
   padding: 0.2rem;
@@ -105,19 +131,23 @@ main {
 }
 
 .main-movie {
-  width: 60%;
+  /*movienin stil ayarı*/
+  width: 50%;
 }
 
 .movie-details span {
+  /*taglerin stil ayarları*/
   color: red;
   font-weight: bold;
 }
 
 .movie-details p {
+  /*paragarflar arası boşluklar stil ayarları*/
   margin: 0.5rem 0;
 }
 
 button {
+  /*butonların stil ayarları*/
   background: red;
   border: 0;
   padding: 0.6rem 2.1rem;
@@ -128,104 +158,118 @@ button {
 }
 
 button i {
+  /*buton ikon stil ayarı*/
   margin-left: -1rem;
   margin-right: 0.5rem;
 }
 button:hover {
+  /*butonun üsteüne gelince uygulanan stil ayarı*/
   background-color: #ff6b81;
 }
 
 /* Suggestion */
 .suggestion-row {
+  /*önerilenlerin arasında ki boşuk stil ayarı*/
   margin-bottom: 2rem;
 }
 
 .suggestion-row-title {
+  /*başlıkların stil ve konum ayarları*/
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .suggestion-row-title a {
+  /*view allın stil ayarları*/
   text-decoration: none;
   color: gray;
 }
 
 .suggestion-row-title a:hover {
+  /*view allın üzerine gelince çalışnan stil ayarı*/
   color: red;
 }
 
 .suggestion-row-title h3 {
+  /*başlıkların stil ayarları*/
   margin: 0.5rem 0;
 }
 
-.suggestion-movies {
-  display: flex;
-  gap: 1.5rem;
-}
-
 .movie-card {
+  /*fim kartlarının stil ayarları*/
+  position: relative;
   border: 1px solid black;
   min-width: 250px;
   border-radius: 0.5rem;
   padding: 2rem 1rem;
   display: flex;
   align-items: center;
-  transition: transform 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 .movie-card:hover {
+  /*film kartlarının üzerine gelince büyütme ve gölgelendirme stil ayarı*/
   transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.movie-card img {
-  border-radius: 8px 8px 0 0;
-  width: 50%;
-}
 .movie-card h4 {
+  /*movei card başlığı stil düzen ayarı*/
   margin: 0;
 }
 
 .movie-card .content-rating {
+  /*contentlerin stil düzen ayarı*/
   margin-left: 0;
 }
 
 .movie-detail-container {
+  /*containerın düzen sve stil ayarı*/
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 .movie-card button {
+  /*butonun stil ve düzen ayarı*/
   padding: 0.5rem 1.8rem;
   border-radius: 0.4rem;
   font-size: 1rem;
 }
 
 .movie-card button i {
+  /*butonun ikonunn konum ayarı */
   margin-left: -0.8rem;
   margin-right: 0.3rem;
 }
 .suggestion-movies {
+  /*suggestion kısımlarının düzen ve stil ayarı*/
   display: flex;
   gap: 1.5rem;
   overflow-x: auto;
   padding-bottom: 1rem;
 }
 .suggestion-movies::-webkit-scrollbar {
+  /*scrol barın düzen ayarı*/
   height: 8px;
 }
 
 .suggestion-movies::-webkit-scrollbar-thumb {
+  /*scrol barın stil ayarı*/
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 4px;
 }
 
 .suggestion-movies::-webkit-scrollbar-track {
+  /*scrol barın yuvasının stil ayarı*/
   background-color: #f1f1f1;
 }
 
 /* Footer */
 footer {
+  /*footer kısmıdanki bilgilerin konum ve stil ayarları */
   display: flex;
   justify-content: space-between;
   gap: 1rem;
@@ -233,33 +277,37 @@ footer {
 }
 
 footer h5 {
+  /*h5 ile tanımlanan başlıkların konum ayarı*/
   margin-top: 0;
 }
 
 .footer-navigation nav {
+  /*footer navın konum ve stil ayarları*/
   display: flex;
   gap: 1rem;
 }
 
 .social-navigation {
+  /*social nav stil ayarı*/
   min-width: 120px;
 }
 
 .mobile-app-navigation {
+  /*mobile apps stil ayarı*/
   min-width: 230px;
-}
-
-.mobile-app-navigation img {
-  height: 2rem;
 }
 
 /* Mobil Uyumlu Düzenlemeler */
 @media (max-width: 768px) {
+  /*768px altı ekranlarda uygulanacak ayarlar*/
+
   header {
+    /*headerın düzen ayarı*/
     flex-wrap: wrap;
   }
 
   header nav {
+    /*nav stil ve düzen ayarı*/
     order: 1;
     width: 100%;
     justify-content: center;
@@ -268,34 +316,40 @@ footer h5 {
   }
 
   header .nav-menu {
+    /*hamburgeri gösteren ve stil veren ayar*/
     display: flex;
     cursor: pointer;
   }
 
   header .user-panel {
+    /*user paneli gizleyen ayar*/
     display: none;
   }
 
   .main-movie {
+    /*main movienin ekrana göre ayarını ayarlar*/
     width: 100%;
   }
 
   footer {
+    /*footerın konum ve stil ayarı*/
     flex-wrap: wrap;
     text-align: center;
   }
 
   footer nav {
+    /*navigasyonun konum ayarı*/
     justify-content: center;
   }
 
   .social-navigation,
   .mobile-app-navigation {
+    /*footer iknonların ekrana göre ayarını ayarlar*/
     width: 100%;
   }
-
-  .search-container input {
-    width: calc(100% - 2rem);
-    padding: 0.3rem 1.5rem 0.3rem 1rem;
+  .search-container {
+    /*search containerın konum ve stil ayarı*/
+    width: 25%;
+    padding: 0 1rem;
   }
 }
