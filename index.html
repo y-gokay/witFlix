@@ -225,23 +225,23 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      //hambuerger menüyü çalıştıran script
+      //hamburger menü ve navbar tanımlandı
+      const hamburgerMenu = document.getElementById("hamburger-menu");
+      const navbar = document.getElementById("navbar");
+
+      //tıklanınca çalışma fonksiyonı
+      hamburgerMenu.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+      });
+      //navbar açık bir şekilde ekran boyutu değişince sıfırlayan kod
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+          navbar.classList.remove("active");
+        }
+      });
+    </script>
   </body>
-
-  <script>
-    //hambuerger menüyü çalıştıran js kodu
-    //hamburger menü ve navbar tanımlandı
-    const hamburgerMenu = document.getElementById("hamburger-menu");
-    const navbar = document.getElementById("navbar");
-
-    //tıklanınca çalışma fonksiyonı
-    hamburgerMenu.addEventListener("click", function () {
-      navbar.classList.toggle("active");
-    });
-    //navbar açık bir şekilde ekran boyutu değişince sıfırlayan kod
-    window.addEventListener("resize", function () {
-      if (window.innerWidth > 768) {
-        navbar.classList.remove("active");
-      }
-    });
-  </script>
 </html>
